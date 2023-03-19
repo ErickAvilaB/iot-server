@@ -26,5 +26,5 @@ button.addEventListener('click', async () => {
     body: JSON.stringify(data),
   };
 
-  await fetch('http://localhost:5000/put_state', options);
+  await fetch('https://iot-production.up.railway.app/put_state', options);
 });
