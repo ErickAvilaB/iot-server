@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Load the css file from the server -->
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='css/style.css')}}"
+    />
+
+    <title>IOT LED</title>
+  </head>
+  <body>
+    <!-- Navbar just with name -->
+    <header class="header">
+      <div class="logo-container">
+        <b class="logo">ErickAvila</b>
+      </div>
+    </header>
+
+    <main class="container">
+      <h1>IOT LED</h1>
+
+      <!-- Display a toggle switch -->
+      <label class="switch">
+        <input type="checkbox" id="toggle" />
+        <span class="slider round"></span>
+      </label>
+    </main>
+
+    <!-- Load the js file from the server -->
+    <script src="{{url_for('static', filename='js/main.js')}}"></script>
+  </body>
+</html>
